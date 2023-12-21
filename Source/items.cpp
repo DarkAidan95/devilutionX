@@ -2680,29 +2680,29 @@ void CalcPlrItemVals(Player &player, bool loadgfx)
 	player._pVitality = std::max(0, vadd + player._pBaseVit);
 
 	if (player._pClass == HeroClass::Rogue) {
-		player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 200;
+		player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 160;
 	} else if (player._pClass == HeroClass::Monk) {
-		player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 150;
+		player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 120;
 		if ((!player.InvBody[INVLOC_HAND_LEFT].isEmpty() && player.InvBody[INVLOC_HAND_LEFT]._itype != ItemType::Staff) || (!player.InvBody[INVLOC_HAND_RIGHT].isEmpty() && player.InvBody[INVLOC_HAND_RIGHT]._itype != ItemType::Staff))
 			player._pDamageMod /= 2; // Monks get half the normal damage bonus if they're holding a non-staff weapon
 	} else if (player._pClass == HeroClass::Bard) {
 		if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Sword || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Sword)
-			player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 150;
+			player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 125;
 		else if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Bow || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Bow) {
-			player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 250;
+			player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 233;
 		} else {
-			player._pDamageMod = playerLevel * player._pStrength / 100;
+			player._pDamageMod = playerLevel * player._pStrength / 90;
 		}
 	} else if (player._pClass == HeroClass::Barbarian) {
 
 		if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Axe || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Axe) {
-			player._pDamageMod = playerLevel * player._pStrength / 75;
+			player._pDamageMod = playerLevel * player._pStrength / 60;
 		} else if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Mace || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Mace) {
-			player._pDamageMod = playerLevel * player._pStrength / 75;
+			player._pDamageMod = playerLevel * player._pStrength / 83;
 		} else if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Bow || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Bow) {
-			player._pDamageMod = playerLevel * player._pStrength / 300;
+			player._pDamageMod = playerLevel * player._pStrength / 200;
 		} else {
-			player._pDamageMod = playerLevel * player._pStrength / 100;
+			player._pDamageMod = playerLevel * player._pStrength / 90;
 		}
 
 		if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Shield || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Shield) {
@@ -2713,9 +2713,9 @@ void CalcPlrItemVals(Player &player, bool loadgfx)
 		} else if (IsNoneOf(player.InvBody[INVLOC_HAND_LEFT]._itype, ItemType::Staff, ItemType::Bow) && IsNoneOf(player.InvBody[INVLOC_HAND_RIGHT]._itype, ItemType::Staff, ItemType::Bow)) {
 			player._pDamageMod += playerLevel * player._pVitality / 100;
 		}
-		player._pIAC += playerLevel / 4;
+		player._pIAC += player._pVitality / 10;
 	} else {
-		player._pDamageMod = playerLevel * player._pStrength / 100;
+		player._pDamageMod = playerLevel * player._pStrength / 90;
 	}
 
 	player._pISpells = spl;

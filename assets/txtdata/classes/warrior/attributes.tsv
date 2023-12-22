@@ -8,13 +8,13 @@ maxMag	80
 maxDex	170
 maxVit	200
 blockBonus	30
-adjLife	60
-adjMana	30
+adjLife	68
+adjMana	29
 lvlLife	2
 lvlMana	1
-chrLife	3
+chrLife	3.5
 chrMana	1.5
-itmLife	3
+itmLife	3.5
 itmMana	1.5
 baseMagicToHit	50
 baseMeleeToHit	70

@@ -2687,22 +2687,22 @@ void CalcPlrItemVals(Player &player, bool loadgfx)
 			player._pDamageMod /= 2; // Monks get half the normal damage bonus if they're holding a non-staff weapon
 	} else if (player._pClass == HeroClass::Bard) {
 		if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Sword || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Sword)
-			player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 125;
+			player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 128;
 		else if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Bow || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Bow) {
 			player._pDamageMod = playerLevel * (player._pStrength + player._pDexterity) / 233;
 		} else {
-			player._pDamageMod = playerLevel * player._pStrength / 90;
+			player._pDamageMod = playerLevel * player._pStrength / 95;
 		}
 	} else if (player._pClass == HeroClass::Barbarian) {
 
 		if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Axe || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Axe) {
-			player._pDamageMod = playerLevel * player._pStrength / 60;
+			player._pDamageMod = playerLevel * player._pStrength / 57;
 		} else if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Mace || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Mace) {
-			player._pDamageMod = playerLevel * player._pStrength / 83;
+			player._pDamageMod = playerLevel * player._pStrength / 82;
 		} else if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Bow || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Bow) {
 			player._pDamageMod = playerLevel * player._pStrength / 200;
 		} else {
-			player._pDamageMod = playerLevel * player._pStrength / 90;
+			player._pDamageMod = playerLevel * player._pStrength / 85;
 		}
 
 		if (player.InvBody[INVLOC_HAND_LEFT]._itype == ItemType::Shield || player.InvBody[INVLOC_HAND_RIGHT]._itype == ItemType::Shield) {
@@ -2726,15 +2726,19 @@ void CalcPlrItemVals(Player &player, bool loadgfx)
 	player._pIEnAc = enac;
 
 	if (player._pClass == HeroClass::Barbarian) {
-		mr += playerLevel;
-		fr += playerLevel;
-		lr += playerLevel;
+		mr += playerLevel / 2 + player._pVitality / 12 + player._pMagic / 8;
+		fr += playerLevel / 2 + player._pVitality / 12 + player._pStrength / 8;
+		lr += playerLevel / 2 + player._pVitality / 12 + player._pDexterity / 8;
+	} else {
+                mr += player._pVitality / 12 + player._pMagic / 8;
+                fr += player._pVitality / 12 + player._pStrength / 8;
+                lr += player._pVitality / 12 + player._pDexterity / 8;
 	}
 
 	if (HasAnyOf(player._pSpellFlags, SpellFlag::RageCooldown)) {
-		mr -= playerLevel;
-		fr -= playerLevel;
-		lr -= playerLevel;
+		mr -= playerLevel / 2;
+		fr -= playerLevel / 2;
+		lr -= playerLevel / 2;
 	}
 
 	if (HasAnyOf(iflgs, ItemSpecialEffect::ZeroResistance)) {

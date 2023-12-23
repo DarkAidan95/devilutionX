@@ -575,7 +575,7 @@ public:
 	 */
 	int GetMeleeToHit() const
 	{
-		return getCharacterLevel() + _pDexterity / 2 + _pIBonusToHit + getPlayerCombatData().baseMeleeToHit;
+		return getCharacterLevel() + _pDexterity / 2 + _pStrength / 4 + _pIBonusToHit + getPlayerCombatData().baseMeleeToHit;
 	}
 
 	/**
@@ -612,7 +612,7 @@ public:
 	 */
 	int GetMagicToHit() const
 	{
-		return _pMagic + getPlayerCombatData().baseMagicToHit;
+		return _pMagic / 2 + _pDexterity / 2 + getPlayerCombatData().baseMagicToHit;
 	}
 
 	/**

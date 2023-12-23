@@ -2621,10 +2621,18 @@ void StartPlrHit(Player &player, int dam, bool forcehit)
 
 	RedrawComponent(PanelDrawComponent::Health);
 	if (player._pClass == HeroClass::Barbarian) {
-		if (dam >> 6 < player.getCharacterLevel() * 1.25 + player._pVitality / 8 + player._pMaxHP / 80 && !forcehit) {
+		if (dam >> 6 < player.getCharacterLevel() * 2 + player._pVitality / 10 + player._pMaxHPBase / 100 && !forcehit) {
 			return;
 		}
-	} else if (dam >> 6 < player.getCharacterLevel() + player._pVitality / 10 + player._pMaxHP / 100 && !forcehit) {
+	}  else if (player._pClass == HeroClass::Warrior) {
+                if (dam >> 6 < player.getCharacterLevel() * 1.6667 + player._pVitality / 13 + player._pMaxHPBase / 133 && !forcehit) {
+                        return;
+	        }
+	}  else if (player._pClass == HeroClass::Monk || player._pClass == HeroClass::Bard || player._pClass == HeroClass::Rogue ) {
+                if (dam >> 6 < player.getCharacterLevel() * 1.3334 + player._pVitality / 16 + player._pMaxHPBase / 166 && !forcehit) {
+                        return;
+		}
+	}  else if (dam >> 6 < player.getCharacterLevel() + player._pVitality / 20 + player._pMaxHPBase / 200 && !forcehit) {
 		return;
 	}
 

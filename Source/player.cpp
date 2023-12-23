@@ -2621,10 +2621,10 @@ void StartPlrHit(Player &player, int dam, bool forcehit)
 
 	RedrawComponent(PanelDrawComponent::Health);
 	if (player._pClass == HeroClass::Barbarian) {
-		if (dam >> 6 < player.getCharacterLevel() * 1.25 + player._pVitality / 8 && !forcehit) {
+		if (dam >> 6 < player.getCharacterLevel() * 1.25 + player._pVitality / 8 + player._pMaxHP / 80 && !forcehit) {
 			return;
 		}
-	} else if (dam >> 6 < player.getCharacterLevel() + player._pVitality / 10 && !forcehit) {
+	} else if (dam >> 6 < player.getCharacterLevel() + player._pVitality / 10 + player._pMaxHP / 100 && !forcehit) {
 		return;
 	}
 

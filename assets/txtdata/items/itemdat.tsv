@@ -1,6 +1,6 @@
 id	dropRate	class	equipType	cursorGraphic	itemType	uniqueBaseItem	name	shortName	minMonsterLevel	durability	minDamage	maxDamage	minArmor	maxArmor	minStrength	minMagic	minDexterity	specialEffects	miscId	spell	usable	value
 IDI_GOLD	Regular	Gold	Unequippable	GOLD	Gold	NONE	Gold		1	0	0	0	0	0	0	0	0		NONE	Null	true	0
-IDI_WARRIOR	Never	Weapon	One-handed	SHORT_SWORD	Sword	NONE	Short Sword		2	20	2	6	0	0	18	0	0		NONE	Null	false	50
+IDI_WARRIOR	Never	Weapon	One-handed	SHORT_SWORD	Sword	NONE	Short Sword		2	20	2	7	0	0	18	0	0		NONE	Null	false	50
 IDI_WARRSHLD	Never	Armor	One-handed	BUCKLER	Shield	NONE	Buckler		2	10	0	0	3	3	0	0	0		NONE	Null	false	50
 IDI_WARRCLUB	Never	Weapon	One-handed	CLUB	Mace	SPIKCLUB	Club		1	20	1	6	0	0	0	0	0		NONE	Null	false	20
 IDI_ROGUE	Never	Weapon	Two-handed	SHORT_BOW	Bow	NONE	Short Bow		1	30	1	4	0	0	0	0	0		NONE	Null	false	100
@@ -30,13 +30,13 @@ IDI_PORTAL	Never	Misc	Unequippable	SCROLL_OF	Misc	NONE	Scroll of Town Portal		4	
 IDI_ARMOFVAL	Never	Armor	Armor	ARKAINES_VALOR	MediumArmor	ARMOFVAL	Arkaine's Valor		0	40	0	0	0	0	0	0	0		UNIQUE	Null	false	0
 IDI_FULLHEAL	Never	Misc	Unequippable	POTION_OF_FULL_HEALING	Misc	NONE	Potion of Full Healing		1	0	0	0	0	0	0	0	0		FULLHEAL	Null	true	150
 IDI_FULLMANA	Never	Misc	Unequippable	POTION_OF_FULL_MANA	Misc	NONE	Potion of Full Mana		1	0	0	0	0	0	0	0	0		FULLMANA	Null	true	150
-IDI_GRISWOLD	Never	Weapon	One-handed	BROAD_SWORD	Sword	GRISWOLD	Griswold's Edge		8	50	4	12	0	0	40	0	0		UNIQUE	Null	false	750
+IDI_GRISWOLD	Never	Weapon	One-handed	BROAD_SWORD	Sword	GRISWOLD	Griswold's Edge		8	50	13	30	0	0	40	0	0		UNIQUE	Null	false	750
 IDI_LGTFORGE	Never	Armor	Armor	BOVINE	HeavyArmor	BOVINE	Bovine Plate		0	40	0	0	0	0	50	0	0		UNIQUE	Null	false	0
 IDI_LAZSTAFF	Never	Misc	Unequippable	STAFF_OF_LAZARUS	Misc	LAZSTAFF	Staff of Lazarus		0	0	0	0	0	0	0	0	0		NONE	Null	false	0
 IDI_RESURRECT	Never	Misc	Unequippable	SCROLL_OF	Misc	NONE	Scroll of Resurrect		1	0	0	0	0	0	0	0	0		SCROLLT	Resurrect	true	250
 IDI_OIL	Never	Misc	Unequippable	OIL	Misc	NONE	Blacksmith Oil		1	0	0	0	0	0	0	0	0		OILBSMTH	Null	true	100
 IDI_SHORTSTAFF	Never	Weapon	Two-handed	SHORT_STAFF	Staff	NONE	Short Staff		1	25	2	4	0	0	0	0	0		NONE	Null	false	20
-IDI_BARDSWORD	Never	Weapon	One-handed	SHORT_SWORD	Sword	NONE	Sword		2	8	1	5	0	0	15	0	20		NONE	Null	false	20
+IDI_BARDSWORD	Never	Weapon	One-handed	SHORT_SWORD	Sword	NONE	Sword		2	8	2	7	0	0	15	0	20		NONE	Null	false	20
 IDI_BARDDAGGER	Never	Weapon	One-handed	DAGGER	Sword	NONE	Dagger		1	16	1	4	0	0	0	0	0		NONE	Null	false	20
 IDI_RUNEBOMB	Never	Quest	Unequippable	RUNE_BOMB	Misc	NONE	Rune Bomb		0	0	0	0	0	0	0	0	0		NONE	Null	false	0
 IDI_THEODORE	Never	Quest	Unequippable	THEODORE	Misc	NONE	Theodore		0	0	0	0	0	0	0	0	0		NONE	Null	false	0
@@ -118,43 +118,43 @@ IDI_GREYSUIT	Never	Quest	Unequippable	GREY_SUIT	Misc	NONE	Grey Suit		0	0	0	0	0	0
 	Regular	Misc	Unequippable	BOOK_BLUE	Misc	NONE	Book of 		14	0	0	0	0	0	0	0	0		BOOK	Null	true	0
 	Regular	Misc	Unequippable	BOOK_BLUE	Misc	NONE	Book of 		20	0	0	0	0	0	0	0	0		BOOK	Null	true	0
 	Regular	Weapon	One-handed	DAGGER	Sword	DAGGER	Dagger	Dagger	1	16	1	4	0	0	0	0	0		NONE	Null	false	60
-	Regular	Weapon	One-handed	SHORT_SWORD	Sword	NONE	Short Sword	Sword	1	24	2	6	0	0	18	0	0		NONE	Null	false	120
-	Regular	Weapon	One-handed	FALCHION	Sword	FALCHION	Falchion	Sword	2	20	4	8	0	0	30	0	0		NONE	Null	false	250
-	Regular	Weapon	One-handed	SCIMITAR	Sword	SCIMITAR	Scimitar	Sword	4	28	3	7	0	0	23	0	23		NONE	Null	false	200
-	Regular	Weapon	One-handed	CLAYMORE	Sword	CLAYMORE	Claymore	Sword	5	36	1	12	0	0	35	0	0		NONE	Null	false	450
-	Regular	Weapon	One-handed	BLADE	Sword	NONE	Blade	Blade	4	30	3	8	0	0	25	0	30		NONE	Null	false	280
-	Regular	Weapon	One-handed	SABRE	Sword	SABRE	Sabre	Sabre	1	45	1	8	0	0	17	0	0		NONE	Null	false	170
-	Regular	Weapon	One-handed	LONG_SWORD	Sword	LONGSWR	Long Sword	Sword	6	40	2	10	0	0	30	0	30		NONE	Null	false	350
-	Regular	Weapon	One-handed	BROAD_SWORD	Sword	BROADSWR	Broad Sword	Sword	8	50	4	12	0	0	40	0	0		NONE	Null	false	750
-	Regular	Weapon	One-handed	BASTARD_SWORD	Sword	BASTARDSWR	Bastard Sword	Sword	10	60	6	15	0	0	50	0	0		NONE	Null	false	1000
-	Regular	Weapon	Two-handed	TWO_HANDED_SWORD	Sword	TWOHANDSWR	Two-Handed Sword	Sword	14	75	8	16	0	0	65	0	0		NONE	Null	false	1800
-	Regular	Weapon	Two-handed	GREAT_SWORD	Sword	GREATSWR	Great Sword	Sword	17	100	10	20	0	0	75	0	0		NONE	Null	false	3000
-	Regular	Weapon	Two-handed	SMALL_AXE	Axe	SMALLAXE	Small Axe	Axe	2	24	2	10	0	0	0	0	0		NONE	Null	false	150
-	Regular	Weapon	Two-handed	AXE	Axe	NONE	Axe	Axe	4	32	4	12	0	0	22	0	0		NONE	Null	false	450
-	Regular	Weapon	Two-handed	LARGE_AXE	Axe	LARGEAXE	Large Axe	Axe	6	40	6	16	0	0	30	0	0		NONE	Null	false	750
-	Regular	Weapon	Two-handed	BROAD_AXE	Axe	BROADAXE	Broad Axe	Axe	8	50	8	20	0	0	50	0	0		NONE	Null	false	1000
-	Regular	Weapon	Two-handed	BATTLE_AXE	Axe	BATTLEAXE	Battle Axe	Axe	10	60	10	25	0	0	65	0	0		NONE	Null	false	1500
-	Regular	Weapon	Two-handed	GREAT_AXE	Axe	GREATAXE	Great Axe	Axe	12	75	12	30	0	0	80	0	0		NONE	Null	false	2500
-	Regular	Weapon	One-handed	MACE	Mace	MACE	Mace	Mace	2	32	1	8	0	0	16	0	0		NONE	Null	false	200
-	Regular	Weapon	One-handed	MORNING_STAR	Mace	MORNSTAR	Morning Star	Mace	3	40	1	10	0	0	26	0	0		NONE	Null	false	300
-	Regular	Weapon	One-handed	WAR_HAMMER	Mace	WARHAMMER	War Hammer	Hammer	5	50	5	9	0	0	40	0	0		NONE	Null	false	600
-	Regular	Weapon	One-handed	SPIKED_CLUB	Mace	SPIKCLUB	Spiked Club	Club	4	20	3	6	0	0	18	0	0		NONE	Null	false	225
+	Regular	Weapon	One-handed	SHORT_SWORD	Sword	NONE	Short Sword	Sword	1	24	2	7	0	0	18	0	0		NONE	Null	false	120
+	Regular	Weapon	One-handed	FALCHION	Sword	FALCHION	Falchion	Sword	2	20	9	17	0	0	30	0	0		NONE	Null	false	250
+	Regular	Weapon	One-handed	SCIMITAR	Sword	SCIMITAR	Scimitar	Sword	4	28	5	15	0	0	23	0	23		NONE	Null	false	200
+	Regular	Weapon	One-handed	CLAYMORE	Sword	CLAYMORE	Claymore	Sword	5	36	7	14	0	0	35	0	0		NONE	Null	false	450
+	Regular	Weapon	One-handed	BLADE	Sword	NONE	Blade	Blade	4	30	3	19	0	0	25	0	30		NONE	Null	false	280
+	Regular	Weapon	One-handed	SABRE	Sword	SABRE	Sabre	Sabre	1	45	3	8	0	0	17	0	0		NONE	Null	false	170
+	Regular	Weapon	One-handed	LONG_SWORD	Sword	LONGSWR	Long Sword	Sword	6	40	8	20	0	0	30	0	30		NONE	Null	false	350
+	Regular	Weapon	One-handed	BROAD_SWORD	Sword	BROADSWR	Broad Sword	Sword	8	50	13	30	0	0	40	0	0		NONE	Null	false	750
+	Regular	Weapon	One-handed	BASTARD_SWORD	Sword	BASTARDSWR	Bastard Sword	Sword	10	60	20	28	0	0	50	0	0		NONE	Null	false	1000
+	Regular	Weapon	Two-handed	TWO_HANDED_SWORD	Sword	TWOHANDSWR	Two-Handed Sword	Sword	14	75	25	42	0	0	65	0	0		NONE	Null	false	1800
+	Regular	Weapon	Two-handed	GREAT_SWORD	Sword	GREATSWR	Great Sword	Sword	17	100	26	61	0	0	75	0	0		NONE	Null	false	3000
+	Regular	Weapon	Two-handed	SMALL_AXE	Axe	SMALLAXE	Small Axe	Axe	2	24	6	13	0	0	0	0	0		NONE	Null	false	150
+	Regular	Weapon	Two-handed	AXE	Axe	NONE	Axe	Axe	4	32	10	18	0	0	22	0	0		NONE	Null	false	450
+	Regular	Weapon	Two-handed	LARGE_AXE	Axe	LARGEAXE	Large Axe	Axe	6	40	12	32	0	0	30	0	0		NONE	Null	false	750
+	Regular	Weapon	Two-handed	BROAD_AXE	Axe	BROADAXE	Broad Axe	Axe	8	50	22	45	0	0	50	0	0		NONE	Null	false	1000
+	Regular	Weapon	Two-handed	BATTLE_AXE	Axe	BATTLEAXE	Battle Axe	Axe	10	60	18	70	0	0	65	0	0		NONE	Null	false	1500
+	Regular	Weapon	Two-handed	GREAT_AXE	Axe	GREATAXE	Great Axe	Axe	12	75	24	77	0	0	80	0	0		NONE	Null	false	2500
+	Regular	Weapon	One-handed	MACE	Mace	MACE	Mace	Mace	2	32	3	10	0	0	16	0	0		NONE	Null	false	200
+	Regular	Weapon	One-handed	MORNING_STAR	Mace	MORNSTAR	Morning Star	Mace	3	40	7	16	0	0	26	0	0		NONE	Null	false	300
+	Regular	Weapon	One-handed	WAR_HAMMER	Mace	WARHAMMER	War Hammer	Hammer	5	50	19	29	0	0	40	0	0		NONE	Null	false	600
+	Regular	Weapon	One-handed	SPIKED_CLUB	Mace	SPIKCLUB	Spiked Club	Club	4	20	5	8	0	0	18	0	0		NONE	Null	false	225
 	Regular	Weapon	One-handed	CLUB	Mace	SPIKCLUB	Club	Club	1	20	1	6	0	0	0	0	0		NONE	Null	false	20
-	Regular	Weapon	One-handed	FLAIL	Mace	FLAIL	Flail	Flail	7	36	2	12	0	0	30	0	0		NONE	Null	false	500
-	Regular	Weapon	Two-handed	MAUL	Mace	MAUL	Maul	Maul	10	50	6	20	0	0	55	0	0		NONE	Null	false	900
+	Regular	Weapon	One-handed	FLAIL	Mace	FLAIL	Flail	Flail	7	36	1	24	0	0	30	0	0		NONE	Null	false	500
+	Regular	Weapon	Two-handed	MAUL	Mace	MAUL	Maul	Maul	10	50	30	43	0	0	55	0	0		NONE	Null	false	900
 	Double	Weapon	Two-handed	SHORT_BOW	Bow	SHORTBOW	Short Bow	Bow	1	30	1	4	0	0	0	0	0		NONE	Null	false	100
-	Double	Weapon	Two-handed	HUNTERS_BOW	Bow	HUNTBOW	Hunter's Bow	Bow	3	40	2	5	0	0	20	0	35		NONE	Null	false	350
-	Double	Weapon	Two-handed	HUNTERS_BOW	Bow	LONGBOW	Long Bow	Bow	5	35	1	6	0	0	25	0	30		NONE	Null	false	250
-	Double	Weapon	Two-handed	COMPOSITE_BOW	Bow	COMPBOW	Composite Bow	Bow	7	45	3	6	0	0	25	0	40		NONE	Null	false	600
-	Double	Weapon	Two-handed	SHORT_BATTLE_BOW	Bow	NONE	Short Battle Bow	Bow	9	45	3	7	0	0	30	0	50		NONE	Null	false	750
-	Double	Weapon	Two-handed	LONG_BATTLE_BOW	Bow	BATTLEBOW	Long Battle Bow	Bow	11	50	1	10	0	0	30	0	60		NONE	Null	false	1000
-	Double	Weapon	Two-handed	SHORT_WAR_BOW	Bow	NONE	Short War Bow	Bow	15	55	4	8	0	0	35	0	70		NONE	Null	false	1500
-	Double	Weapon	Two-handed	LONG_WAR_BOW	Bow	WARBOW	Long War Bow	Bow	19	60	1	14	0	0	45	0	80		NONE	Null	false	2000
-	Regular	Weapon	Two-handed	SHORT_STAFF	Staff	SHORTSTAFF	Short Staff	Staff	1	25	2	4	0	0	0	0	0		STAFF	Null	false	30
-	Regular	Weapon	Two-handed	LONG_STAFF	Staff	LONGSTAFF	Long Staff	Staff	4	35	4	8	0	0	0	0	0		STAFF	Null	false	100
-	Regular	Weapon	Two-handed	COMPOSITE_STAFF	Staff	COMPSTAFF	Composite Staff	Staff	6	45	5	10	0	0	0	0	0		STAFF	Null	false	500
-	Regular	Weapon	Two-handed	SHORT_STAFF	Staff	QUARSTAFF	Quarter Staff	Staff	9	55	6	12	0	0	20	0	0		STAFF	Null	false	1000
-	Regular	Weapon	Two-handed	WAR_STAFF	Staff	WARSTAFF	War Staff	Staff	12	75	8	16	0	0	30	0	0		STAFF	Null	false	1500
+	Double	Weapon	Two-handed	HUNTERS_BOW	Bow	HUNTBOW	Hunter's Bow	Bow	3	40	2	6	0	0	20	0	35		NONE	Null	false	350
+	Double	Weapon	Two-handed	HUNTERS_BOW	Bow	LONGBOW	Long Bow	Bow	5	35	3	10	0	0	25	0	30		NONE	Null	false	250
+	Double	Weapon	Two-handed	COMPOSITE_BOW	Bow	COMPBOW	Composite Bow	Bow	7	45	4	8	0	0	25	0	40		NONE	Null	false	600
+	Double	Weapon	Two-handed	SHORT_BATTLE_BOW	Bow	NONE	Short Battle Bow	Bow	9	45	5	11	0	0	30	0	50		NONE	Null	false	750
+	Double	Weapon	Two-handed	LONG_BATTLE_BOW	Bow	BATTLEBOW	Long Battle Bow	Bow	11	50	3	18	0	0	30	0	60		NONE	Null	false	1000
+	Double	Weapon	Two-handed	SHORT_WAR_BOW	Bow	NONE	Short War Bow	Bow	15	55	6	14	0	0	35	0	70		NONE	Null	false	1500
+	Double	Weapon	Two-handed	LONG_WAR_BOW	Bow	WARBOW	Long War Bow	Bow	19	60	3	23	0	0	45	0	80		NONE	Null	false	2000
+	Regular	Weapon	Two-handed	SHORT_STAFF	Staff	SHORTSTAFF	Short Staff	Staff	1	25	1	5	0	0	0	0	0		STAFF	Null	false	30
+	Regular	Weapon	Two-handed	LONG_STAFF	Staff	LONGSTAFF	Long Staff	Staff	4	35	2	8	0	0	0	0	0		STAFF	Null	false	100
+	Regular	Weapon	Two-handed	COMPOSITE_STAFF	Staff	COMPSTAFF	Composite Staff	Staff	6	45	4	12	0	0	0	0	0		STAFF	Null	false	500
+	Regular	Weapon	Two-handed	SHORT_STAFF	Staff	QUARSTAFF	Quarter Staff	Staff	9	55	6	13	0	0	20	0	0		STAFF	Null	false	1000
+	Regular	Weapon	Two-handed	WAR_STAFF	Staff	WARSTAFF	War Staff	Staff	12	75	12	28	0	0	30	0	0		STAFF	Null	false	1500
 	Regular	Misc	Ring	RING	Ring	RING	Ring	Ring	5	0	0	0	0	0	0	0	0		RING	Null	false	1000
 	Regular	Misc	Ring	RING	Ring	RING	Ring	Ring	10	0	0	0	0	0	0	0	0		RING	Null	false	1000
 	Regular	Misc	Ring	RING	Ring	RING	Ring	Ring	15	0	0	0	0	0	0	0	0		RING	Null	false	1000
@@ -165,5 +165,5 @@ IDI_GREYSUIT	Never	Quest	Unequippable	GREY_SUIT	Misc	NONE	Grey Suit		0	0	0	0	0	0
 	Regular	Misc	Unequippable	GREATER_RUNE_OF_FIRE	Misc	NONE	Greater Rune of Fire	Rune	7	0	0	0	0	0	0	42	0		GR_RUNEF	Null	true	400
 	Regular	Misc	Unequippable	GREATER_RUNE_OF_LIGHTNING	Misc	NONE	Greater Rune of Lightning	Rune	7	0	0	0	0	0	0	42	0		GR_RUNEL	Null	true	500
 	Regular	Misc	Unequippable	RUNE_OF_STONE	Misc	NONE	Rune of Stone	Rune	7	0	0	0	0	0	0	25	0		RUNES	Null	true	300
-IDI_SORCERER	Never	Weapon	Two-handed	SHORT_STAFF	Staff	NONE	Short Staff of Charged Bolt		1	25	2	4	0	0	0	20	0		STAFF	ChargedBolt	false	520
+IDI_SORCERER	Never	Weapon	Two-handed	SHORT_STAFF	Staff	NONE	Short Staff of Charged Bolt		1	25	1	5	0	0	0	20	0		STAFF	ChargedBolt	false	520
 IDI_ARENAPOT	Never	Misc	Unequippable	ARENA_POTION	Misc	NONE	Arena Potion		7	0	0	0	0	0	0	0	0		ARENAPOT	Null	true	0

@@ -567,7 +567,7 @@ public:
 	 */
 	int GetArmor() const
 	{
-		return _pIBonusAC + _pIAC + _pDexterity / 4;
+		return 10 + _pIBonusAC + _pIAC + (_pDexterity - 20) / 4;
 	}
 
 	/**

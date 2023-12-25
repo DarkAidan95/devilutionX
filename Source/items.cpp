@@ -2681,6 +2681,7 @@ void CalcPlrItemVals(Player &player, bool loadgfx)
 
 	if (player._pClass == HeroClass::Rogue) {
 		player._pDamageMod = (player._pStrength - 20) / 4 + (player._pDexterity - 20) / 3;
+                player._pIAC += (player._pDexterity - 20) / 12
 	} else if (player._pClass == HeroClass::Monk) {
 		player._pDamageMod = (player._pStrength - 20) / 3.5 + (player._pDexterity - 20) / 3.5;
 		if ((!player.InvBody[INVLOC_HAND_LEFT].isEmpty() && player.InvBody[INVLOC_HAND_LEFT]._itype != ItemType::Staff) || (!player.InvBody[INVLOC_HAND_RIGHT].isEmpty() && player.InvBody[INVLOC_HAND_RIGHT]._itype != ItemType::Staff))
